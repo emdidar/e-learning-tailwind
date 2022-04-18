@@ -3,7 +3,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      backgroundImage: {
+        hero: "url('./../images/banner.png')",
       },
     },
   },
