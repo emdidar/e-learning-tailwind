@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/font-awesome/css/all.min.css" />
+
     <!-- Style -->
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -15,23 +18,87 @@
       rel="stylesheet"
     />
   </head>
+
   <body class="font-poppins text-gray-800">
     <!-- Start Navbar -->
     <nav class="bg-white shadow p-2.5 z-50">
       <div class="container mx-auto">
         <div class="flex justify-between">
           <div class="flex justify-center items-center">
+            <!-- Logo -->
             <div>
               <a href="index.html">
                 <img src="./images/logo.png" alt="logo" class="w-36" />
               </a>
             </div>
+            <!-- Category icon -->
             <div class="ml-8">
-              <img src="./images/icons/category-icon.svg" alt="" class="w-8 cursor-pointer">
+              <img
+                src="./images/icons/category-icon.svg"
+                alt=""
+                class="w-8 cursor-pointer"
+              />
             </div>
+            <!-- Search Option -->
             <div class="ml-16 relative">
-              <span></span>
-              <input type="search" class="bg-slate-100 w-full rounded-md p-3 pl-12 transition" placeholder="Search for Tuts, Videos, Tutorial">
+              <span class="absolute top-3 left-4">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input
+                type="search"
+                class="bg-slate-100 w-full rounded-md p-3 pl-12 transition outline-none outline-1 focus:outline-red-300"
+                placeholder="Search for Tuts, Videos, Tutorial"
+              />
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <!-- Cart Option -->
+            <ul class="list-none">
+              <li class="inline-block mx-6 relative group">
+                <a
+                  href="#"
+                  class="text-xl text-gray-500 group-hover:opacity-75"
+                >
+                  <span
+                    class="absolute -top-2 bg-red-500 text-white pl-1.5 -right-3.5 text-sm rounded-full w-5 h-5"
+                    >2</span
+                  >
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </a>
+              </li>
+              <li class="inline-block mx-6 relative group">
+                <a
+                  href="#"
+                  class="text-xl text-gray-500 group-hover:opacity-75"
+                >
+                  <span
+                    class="absolute -top-2 bg-red-500 text-white pl-1.5 -right-3.5 text-sm rounded-full w-5 h-5"
+                    >2</span
+                  >
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </li>
+              <li class="inline-block mx-6 relative group">
+                <a
+                  href="#"
+                  class="text-xl text-gray-500 group-hover:opacity-75"
+                >
+                  <span
+                    class="absolute -top-2 bg-red-500 text-white pl-1.5 -right-3.5 text-sm rounded-full w-5 h-5"
+                    >2</span
+                  >
+                  <i class="fa-solid fa-bell"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- User Option -->
+            <div class="-mt-2.5 mx-3 group">
+              <a
+                href="#"
+                class="text-xl text-gray-500 group-hover:opacity-75 rounded-full w-5 h-5 shadow py-1.5 px-3"
+              >
+                <i class="fa-solid fa-user"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -40,7 +107,7 @@
     <!-- End Navbar -->
 
     <!-- Start Header / Hero Section -->
-    <section></section>
+    <header></header>
     <!-- End Header / Hero Section -->
 
     <!-- Start Categories Section -->
